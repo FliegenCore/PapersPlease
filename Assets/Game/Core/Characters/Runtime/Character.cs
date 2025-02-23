@@ -1,3 +1,4 @@
+using Core.World;
 using DG.Tweening;
 using System;
 using UnityEngine;
@@ -16,10 +17,20 @@ namespace Core.Entities
         [SerializeField] private CharacterType _characterType;
 
         private Sequence _moveSequence;
+        private string _name;
+
+        public CharacterType CharacterType => _characterType;
+
+        public string Name => _name;
 
         public void Initialize()
         {
             transform.position = new Vector3(-15, transform.position.y, transform.position.z);
+        }
+
+        public void SetName(string nme)
+        {
+            _name = nme;
         }
 
         public Character SetSprite(Sprite sprite)

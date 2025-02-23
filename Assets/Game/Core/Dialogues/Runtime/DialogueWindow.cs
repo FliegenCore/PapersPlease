@@ -1,25 +1,15 @@
+using TMPro;
 using UnityEngine;
 
 namespace Core.Dialogues
 {
     public class DialogueWindow : MonoBehaviour
     {
-        private DialogueData _dialogueData;
+        [SerializeField] private TMP_Text _dialogueText;
 
-        public void SetDialogueText(string speacker, string description)
+        public void SetDialogueText(string description)
         {
-            _dialogueData.Name = speacker;
-            _dialogueData.Description = description;
-        }
-
-        public void Enable()
-        {
-            gameObject.SetActive(true);
-        }
-
-        public void Disable()
-        {
-            gameObject.SetActive(false);
+            _dialogueText.text = description;
         }
     }
 }

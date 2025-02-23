@@ -1,0 +1,5 @@
+{
+  "StartDialogue": "Hi!",
+  "EndPositiveDialogue": "Thank you!",
+  "EndNegativeDialogue": "Why...?"
+}

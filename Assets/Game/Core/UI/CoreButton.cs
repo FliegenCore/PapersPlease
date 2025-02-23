@@ -47,7 +47,7 @@ namespace Core.UI
             }
         }
 
-        private void Click()
+        protected virtual void Click()
         {
             OnClick?.Invoke();
         }

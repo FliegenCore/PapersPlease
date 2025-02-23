@@ -1,0 +1,5 @@
+{
+  "StartDialogue": "Good evening, can i rent a room on the floor above?",
+  "EndPositiveDialogue": "Thanks",
+  "EndNegativeDialogue": "...Okey..."
+}
